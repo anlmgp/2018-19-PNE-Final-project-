@@ -1,8 +1,8 @@
 import http.server
 import socketserver
 import termcolor
-import requests, sys
 
+import requests, sys
 server = "http://rest.ensembl.org"
 ext = "/info/species?"
 r = requests.get(server + ext, headers={"Content-Type": "application/json"})
@@ -11,8 +11,12 @@ if not r.ok:
     sys.exit()
 decoded = r.json()
 name = decoded['species']
-name = name[1]
-print(name)
+for i in name rang:
+    n =i['common_name']
+    print(n)
+
+print (len(n))
+
 
 PORT = 8000
 
@@ -21,17 +25,6 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
 
 
     def do_GET(self):
-        import requests, sys
-        server = "http://rest.ensembl.org"
-        ext = "/info/species?"
-        r = requests.get(server + ext, headers={"Content-Type": "application/json"})
-        if not r.ok:
-            r.raise_for_status()
-            sys.exit()
-        decoded = r.json()
-        name = repr(decoded)
-        name = name('species')
-        print(name)
 
 
         if self.path == '/' or self.path == '/favicon.ico':

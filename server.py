@@ -3,7 +3,7 @@ import socketserver
 import termcolor
 import requests, sys
 
-PORT = 8001
+PORT = 8000
 
 
 server = "http://rest.ensembl.org"
@@ -21,7 +21,29 @@ for i in name:
     result1.append(n)
     result += "<p>{}</p>".format(n)
 
-def
+def karotype(specie):
+    server = "http://rest.ensembl.org"
+    ext = "/info/assembly/"+ specie
+    r = requests.get(server + ext, headers={"Content-Type": "application/json"})
+    if not r.ok:
+        result = 'requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://rest.ensembl.org/info/assembly/a'
+        return result
+    decoded = r.json()
+    result = decoded['karyotype']
+    return result
+
+def lenght(specie):
+    server = "http://rest.ensembl.org"
+    ext = "/info/assembly/"+ specie
+    r = requests.get(server + ext, headers={"Content-Type": "application/json"})
+    if not r.ok:
+        result = 'requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://rest.ensembl.org/info/assembly/a'
+        return result
+    decoded = r.json()
+    length = decoded['top_level_region']
+    length = length[0]
+    length = length['length']
+    return length
 
 
 
@@ -30,11 +52,11 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
     def do_GET(self):
         print(self.path)
 
-        species = self.path.split ('?')
-        endpoint =  species[0]
-        if len(species)== 2:
-            number = species[1]
-            number1 =number.split ('=')
+        l_endpoint = self.path.split ('?')
+        endpoint =  l_endpoint[0]
+        if len(l_endpoint)== 2:
+            endpoint1 = l_endpoint[1]
+            number1 =endpoint1.split ('=')
             if len(number1) == 2:
                 number2 =number1[1]
 
@@ -42,8 +64,8 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
             f = open("form.html", 'r')
             contents = f.read()
 
-        elif endpoint == '/listSpecies':
-            if number.endswith('='):
+        elif endpoint == '/listSpecies' or self.path == '/listSpecies':
+            if endpoint1.endswith('=') or self.path == '/listSpecies':
                 contents = """<!DOCTYPE html>
                         <html lang="en">
                         <head>
@@ -68,6 +90,37 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
                         <h1>List of species</h1>
                         {}</p>
                         <a href="/">Link to main</a>""".format(r)
+
+        elif endpoint == '/karyotype':
+            if number2 == '':
+                s = open("error.html")
+                contents = s.read()
+            else:
+                contents = """<!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                        <meta charset="UTF-8">
+                        <title>RESULT</title>
+                        </head>
+                        <body>
+                        <h1>Karyotype of {}</h1>
+                        {}</p>
+                        <a href="/">Link to main</a>""".format(number2,karotype(number2))
+
+        elif endpoint == '/chromosomeLength':
+            contents = """<!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                    <meta charset="UTF-8">
+                    <title>RESULT</title>
+                    </head>
+                    <body>
+                    <h1>Lenght of {}</h1>
+                    {}</p>
+                    <a href="/">Link to main</a>""".format(number2, lenght(number2))
+
+
+
 
 
         else:

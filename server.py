@@ -3,7 +3,7 @@ import socketserver
 import termcolor
 import requests, sys
 
-PORT = 8000
+PORT = 8001
 
 
 server = "http://rest.ensembl.org"
@@ -21,6 +21,8 @@ for i in name:
     result1.append(n)
     result += "<p>{}</p>".format(n)
 
+def
+
 
 
 class TestHandler(http.server.BaseHTTPRequestHandler):
@@ -29,18 +31,18 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
         print(self.path)
 
         species = self.path.split ('?')
-        total_species = species[0]
+        endpoint =  species[0]
         if len(species)== 2:
             number = species[1]
             number1 =number.split ('=')
             if len(number1) == 2:
                 number2 =number1[1]
 
-
         if self.path == '/':
             f = open("form.html", 'r')
             contents = f.read()
-        elif total_species == '/listSpecies':
+
+        elif endpoint == '/listSpecies':
             if number.endswith('='):
                 contents = """<!DOCTYPE html>
                         <html lang="en">
@@ -53,7 +55,9 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
                         {}</p>
                         <a href="/">Link to main</a>""".format(result)
             else:
+                r = ''
                 resultt = result1[0:int(number2)]
+                r += "</p><p>".join(resultt)
                 contents = """<!DOCTYPE html>
                         <html lang="en">
                         <head>
@@ -63,8 +67,8 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
                         <body>
                         <h1>List of species</h1>
                         {}</p>
-                        <a href="/">Link to main</a>""".format(resultt)
-        elif 
+                        <a href="/">Link to main</a>""".format(r)
+
 
         else:
             s = open("error.html")

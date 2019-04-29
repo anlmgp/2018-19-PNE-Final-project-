@@ -32,17 +32,16 @@ def karotype(specie):
     result = decoded['karyotype']
     return result
 
-def lenght(specie):
+
+def lenght(specie, chromo):
     server = "http://rest.ensembl.org"
-    ext = "/info/assembly/"+ specie
-    r = requests.get(server + ext, headers={"Content-Type": "application/json"})
+    ext = "/info/assembly/"+ specie + "/" +chromo
+    r = requests.get(server+ext, headers={"Content-Type": "application/json"})
     if not r.ok:
-        result = 'requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://rest.ensembl.org/info/assembly/a'
+        result = 'requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://rest.ensembl.org/info/assembly/'+ext
         return result
     decoded = r.json()
-    length = decoded['top_level_region']
-    length = length[0]
-    length = length['length']
+    length = decoded['length']
     return length
 
 
@@ -52,20 +51,26 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
     def do_GET(self):
         print(self.path)
 
+        endpoint1 =''
         l_endpoint = self.path.split ('?')
-        endpoint =  l_endpoint[0]
+        endpoint = l_endpoint[0]
         if len(l_endpoint)== 2:
-            endpoint1 = l_endpoint[1]
+            endpoint1 += str(l_endpoint[1])
             number1 =endpoint1.split ('=')
             if len(number1) == 2:
                 number2 =number1[1]
+            number = endpoint1.split('&')
+            if len (number) == 2:
+                spe =  number[0].lstrip('specie=')
+                chromosome = number[1].lstrip('chromo=')
+
 
         if self.path == '/':
             f = open("form.html", 'r')
             contents = f.read()
 
-        elif endpoint == '/listSpecies' or self.path == '/listSpecies':
-            if endpoint1.endswith('=') or self.path == '/listSpecies':
+        elif endpoint == '/listSpecies' or (self.path == '/listSpecies'):
+            if endpoint1.endswith('=') or (self.path == '/listSpecies'):
                 contents = """<!DOCTYPE html>
                         <html lang="en">
                         <head>
@@ -115,13 +120,9 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
                     <title>RESULT</title>
                     </head>
                     <body>
-                    <h1>Lenght of {}</h1>
-                    {}</p>
-                    <a href="/">Link to main</a>""".format(number2, lenght(number2))
-
-
-
-
+                    <h1>Lenght of {} chromosome of the specie {}. </h1>
+                    The lenght is: {}</p>
+                    <a href="/">Link to main</a>""".format(chromosome,spe, lenght(spe,chromosome))
 
         else:
             s = open("error.html")

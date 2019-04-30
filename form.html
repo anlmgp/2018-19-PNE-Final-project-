@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Information</title>
   </head>
-  <body>
+    <body style="background-color: pink;">
     <h2>Information of e!Ensambl</h2>
     <h4>List of species</h4>
       <form action="/listSpecies" method="get">
@@ -24,5 +24,30 @@
         Introduce a chromosome:<input type="text" name="chromo">
       <br><br>
         <input type="submit"/>
+      </form>
+    <h4>Sequence for human gene</h4>
+     <form action="/geneSeq" method="get">
+       Introduce the name of a gene: <input type="text" name="specie">
+       <br><br>
+        <input type="submit">
+       </form>
+    <h4>Information of a gene</h4>
+     <form action="/geneInfo" method="get">
+       Introduce the name of a gene: <input type="text" name="specie">
+       <br><br>
+        <input type="submit">
+       </form>
+    <h4>Calculations of a gene</h4>
+    <form action="/geneCalc" method="get">
+      Introduce the name of a gene: <input type="text" name="specie">
+       <br><br>
+        <input type="submit">
+       </form>
+    <h4>Names of genes in location of a gene</h4>
+      <p>Introduce the name of a chromosome: <input type="text" name="chromo"></p>
+      <p>Introduce the start point: <input type="number" name="start" min="0"></p>
+      Introduce the end point: <input type="number" name="end" min="0">
+        <br><br>
+         <input type="submit">
   </body>
 </html>

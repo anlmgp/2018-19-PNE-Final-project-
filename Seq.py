@@ -3,7 +3,7 @@ class Seq:
     def __init__(self, strbases):
         self.strbases = strbases
 
-    def len (self):
+    def len(self):
         return len(self.strbases)
 
     def complement(self):

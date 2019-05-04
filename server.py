@@ -5,6 +5,7 @@ import requests
 from Seq import Seq
 
 PORT = 8000
+socketserver.TCPServer.allow_reuse_address = True
 
 
 def listpecies():

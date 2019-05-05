@@ -1,0 +1,908 @@
+Test report of the final practice.
+
+- Basic level
+>/listSpecies
+When we send "http://localhost:8000/listSpecies?limit=" to the server we obtain:
+<!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                    <meta charset="UTF-8">
+                    <title>RESULT</title>
+                    </head>
+                    <body>
+                    <h1>List of species:</h1>
+                    <ul><li value="1">Ficedula_albicollis</li></ul>
+                    <ul><li value="1">Castor_canadensis</li></ul><ul>
+                    <li value="1">Ciona_intestinalis</li></ul><ul>
+                    <li value="1">Pogona_vitticeps</li></ul>
+                    <ul><li value="1">Manacus_vitellinus</li></ul>
+                    <ul><li value="1">Mus_spicilegus</li></ul>
+                    <ul><li value="1">Zonotrichia_albicollis</li></ul>
+                    <ul><li value="1">Dipodomys_ordii</li></ul>
+                    <ul><li value="1">Nomascus_leucogenys</li></ul>
+                    <ul><li value="1">Mus_musculus_fvbnj</li></ul>
+                    <ul><li value="1">Fundulus_heteroclitus</li></ul>
+                    <ul><li value="1">Mus_spretus</li></ul>
+                    <ul><li value="1">Poecilia_reticulata</li></ul>
+                    <ul><li value="1">Amphiprion_ocellaris</li></ul>
+                    <ul><li value="1">Meriones_unguiculatus</li></ul>
+                    <ul><li value="1">Saccharomyces_cerevisiae</li></ul>
+                    <ul><li value="1">Paramormyrops_kingsleyae</li></ul>
+                    <ul><li value="1">Jaculus_jaculus</li></ul>
+                    <ul><li value="1">Mus_musculus_c3hhej</li></ul>
+                    <ul><li value="1">Amphiprion_percula</li></ul>
+                    <ul><li value="1">Erinaceus_europaeus</li></ul>
+                    <ul><li value="1">Phascolarctos_cinereus</li></ul>
+                    <ul><li value="1">Acanthochromis_polyacanthus</li></ul>
+                    <ul><li value="1">Lepidothrix_coronata</li></ul>
+                    <ul><li value="1">Neovison_vison</li></ul>
+                    <ul><li value="1">Cavia_porcellus</li></ul>
+                    <ul><li value="1">Equus_caballus</li></ul>
+                    <ul><li value="1">Dasypus_novemcinctus</li></ul>
+                    <ul><li value="1">Haplochromis_burtoni</li></ul>
+                    <ul><li value="1">Macaca_fascicularis</li></ul>
+                    <ul><li value="1">Coturnix_japonica</li></ul>
+                    <ul><li value="1">Melopsittacus_undulatus</li></ul>
+                    <ul><li value="1">Heterocephalus_glaber_male</li></ul>
+                    <ul><li value="1">Aotus_nancymaae</li></ul>
+                    <ul><li value="1">Ursus_maritimus</li></ul>
+                    <ul><li value="1">Prolemur_simus</li></ul>
+                    <ul><li value="1">Poecilia_latipinna</li></ul>
+                    <ul><li value="1">Kryptolebias_marmoratus</li></ul>
+                    <ul><li value="1">Apteryx_haastii</li></ul>
+                    <ul><li value="1">Salvator_merianae</li></ul>
+                    <ul><li value="1">Propithecus_coquereli</li></ul>
+                    <ul><li value="1">Equus_asinus_asinus</li></ul>
+                    <ul><li value="1">Cavia_aperea</li></ul>
+                    <ul><li value="1">Anas_platyrhynchos_platyrhynchos</li></ul>
+                    <ul><li value="1">Danio_rerio</li></ul>
+                    <ul><li value="1">Peromyscus_maniculatus_bairdii</li></ul>
+                    <ul><li value="1">Serinus_canaria</li></ul>
+                    <ul><li value="1">Mesocricetus_auratus</li></ul>
+                    <ul><li value="1">Ictalurus_punctatus</li></ul>
+                    <ul><li value="1">Gambusia_affinis</li></ul>
+                    <ul><li value="1">Monopterus_albus</li></ul>
+                    <ul><li value="1">Lonchura_striata_domestica</li></ul>
+                    <ul><li value="1">Felis_catus</li></ul>
+                    <ul><li value="1">Ornithorhynchus_anatinus</li></ul>
+                    <ul><li value="1">Apteryx_owenii</li></ul>
+                    <ul><li value="1">Sphenodon_punctatus</li></ul>
+                    <ul><li value="1">Poecilia_mexicana</li></ul>
+                    <ul><li value="1">Drosophila_melanogaster</li></ul>
+                    <ul><li value="1">Sarcophilus_harrisii</li></ul>
+                    <ul><li value="1">Maylandia_zebra</li></ul>
+                    <ul><li value="1">Mus_musculus_wsbeij</li></ul>
+                    <ul><li value="1">Labrus_bergylta</li></ul>
+                    <ul><li value="1">Parus_major</li></ul>
+                    <ul><li value="1">Numida_meleagris</li></ul>
+                    <ul><li value="1">Petromyzon_marinus</li></ul>
+                    <ul><li value="1">Lepisosteus_oculatus</li></ul>
+                    <ul><li value="1">Xiphophorus_couchianus</li></ul>
+                    <ul><li value="1">Nannospalax_galili</li></ul>
+                    <ul><li value="1">Ochotona_princeps</li></ul>
+                    <ul><li value="1">Choloepus_hoffmanni</li></ul>
+                    <ul><li value="1">Pan_troglodytes</li></ul>
+                    <ul><li value="1">Saimiri_boliviensis_boliviensis</li></ul>
+                    <ul><li value="1">Mustela_putorius_furo</li></ul>
+                    <ul><li value="1">Gopherus_agassizii</li></ul>
+                    <ul><li value="1">Urocitellus_parryii</li></ul>
+                    <ul><li value="1">Mus_musculus_pwkphj</li></ul>
+                    <ul><li value="1">Oryzias_latipes</li></ul>
+                    <ul><li value="1">Pteropus_vampyrus</li></ul>
+                    <ul><li value="1">Chelonoidis_abingdonii</li></ul>
+                    <ul><li value="1">Rhinopithecus_bieti</li></ul>
+                    <ul><li value="1">Astyanax_mexicanus</li></ul>
+                    <ul><li value="1">Neolamprologus_brichardi</li></ul>
+                    <ul><li value="1">Mus_musculus_casteij</li></ul>
+                    <ul><li value="1">Echinops_telfairi</li></ul>
+                    <ul><li value="1">Taeniopygia_guttata</li></ul>
+                    <ul><li value="1">Loxodonta_africana</li></ul>
+                    <ul><li value="1">Cebus_capucinus</li></ul>
+                    <ul><li value="1">Anolis_carolinensis</li></ul>
+                    <ul><li value="1">Ailuropoda_melanoleuca</li></ul>
+                    <ul><li value="1">Spermophilus_dauricus</li></ul>
+                    <ul><li value="1">Sus_scrofa</li></ul>
+                    <ul><li value="1">Mus_musculus</li></ul>
+                    <ul><li value="1">Mus_musculus_nzohlltj</li></ul>
+                    <ul><li value="1">Calidris_pygmaea</li></ul>
+                    <ul><li value="1">Notamacropus_eugenii</li></ul>
+                    <ul><li value="1">Hippocampus_comes</li></ul>
+                    <ul><li value="1">Bos_taurus</li></ul>
+                    <ul><li value="1">Bison_bison_bison</li></ul>
+                    <ul><li value="1">Mus_musculus_aj</li></ul>
+                    <ul><li value="1">Oryzias_latipes_hsok</li></ul>
+                    <ul><li value="1">Pan_paniscus</li></ul>
+                    <ul><li value="1">Gorilla_gorilla</li></ul>
+                    <ul><li value="1">Dromaius_novaehollandiae</li></ul>
+                    <ul><li value="1">Apteryx_rowi</li></ul>
+                    <ul><li value="1">Canis_familiaris</li></ul>
+                    <ul><li value="1">Nothoprocta_perdicaria</li></ul>
+                    <ul><li value="1">Cyprinodon_variegatus</li></ul>
+                    <ul><li value="1">Cricetulus_griseus_picr</li></ul>
+                    <ul><li value="1">Vicugna_pacos</li></ul>
+                    <ul><li value="1">Cyanistes_caeruleus</li></ul>
+                    <ul><li value="1">Mastacembelus_armatus</li></ul>
+                    <ul><li value="1">Macaca_nemestrina</li></ul>
+                    <ul><li value="1">Mus_caroli</li></ul>
+                    <ul><li value="1">Colobus_angolensis_palliatus</li></ul>
+                    <ul><li value="1">Ovis_aries</li></ul>
+                    <ul><li value="1">Mandrillus_leucophaeus</li></ul>
+                    <ul><li value="1">Astatotilapia_calliptera</li></ul>
+                    <ul><li value="1">Oryzias_latipes_hni</li></ul>
+                    <ul><li value="1">Gadus_morhua</li></ul>
+                    <ul><li value="1">Eptatretus_burgeri</li></ul>
+                    <ul><li value="1">Carlito_syrichta</li></ul>
+                    <ul><li value="1">Oryzias_melastigma</li></ul>
+                    <ul><li value="1">Cercocebus_atys</li></ul>
+                    <ul><li value="1">Gasterosteus_aculeatus</li></ul>
+                    <ul><li value="1">Poecilia_formosa</li></ul>
+                    <ul><li value="1">Mus_musculus_dba2j</li></ul>
+                    <ul><li value="1">Mus_musculus_c57bl6nj</li></ul>
+                    <ul><li value="1">Junco_hyemalis</li></ul>
+                    <ul><li value="1">Cricetulus_griseus_chok1gshd</li></ul>
+                    <ul><li value="1">Xenopus_tropicalis</li></ul>
+                    <ul><li value="1">Canis_lupus_dingo</li></ul>
+                    <ul><li value="1">Tursiops_truncatus</li></ul>
+                    <ul><li value="1">Piliocolobus_tephrosceles</li></ul>
+                    <ul><li value="1">Pygocentrus_nattereri</li></ul>
+                    <ul><li value="1">Microcebus_murinus</li></ul>
+                    <ul><li value="1">Amphilophus_citrinellus</li></ul>
+                    <ul><li value="1">Caenorhabditis_elegans</li></ul>
+                    <ul><li value="1">Tetraodon_nigroviridis</li></ul>
+                    <ul><li value="1">Pundamilia_nyererei</li></ul>
+                    <ul><li value="1">Xiphophorus_maculatus</li></ul>
+                    <ul><li value="1">Mus_pahari</li></ul>
+                    <ul><li value="1">Cricetulus_griseus_crigri</li></ul>
+                    <ul><li value="1">Chinchilla_lanigera</li></ul>
+                    <ul><li value="1">Procavia_capensis</li></ul>
+                    <ul><li value="1">Mus_musculus_balbcj</li></ul>
+                    <ul><li value="1">Heterocephalus_glaber_female</li></ul>
+                    <ul><li value="1">Calidris_pugnax</li></ul>
+                    <ul><li value="1">Chlorocebus_sabaeus</li></ul>
+                    <ul><li value="1">Capra_hircus</li></ul>
+                    <ul><li value="1">Otolemur_garnettii</li></ul>
+                    <ul><li value="1">Latimeria_chalumnae</li></ul>
+                    <ul><li value="1">Anser_brachyrhynchus</li></ul>
+                    <ul><li value="1">Macaca_mulatta</li></ul>
+                    <ul><li value="1">Callithrix_jacchus</li></ul>
+                    <ul><li value="1">Scophthalmus_maximus</li></ul>
+                    <ul><li value="1">Periophthalmus_magnuspinnatus</li></ul>
+                    <ul><li value="1">Pelodiscus_sinensis</li></ul>
+                    <ul><li value="1">Panthera_pardus</li></ul>
+                    <ul><li value="1">Octodon_degus</li></ul>
+                    <ul><li value="1">Anabas_testudineus</li></ul>
+                    <ul><li value="1">Cynoglossus_semilaevis</li></ul>
+                    <ul><li value="1">Notechis_scutatus</li></ul>
+                    <ul><li value="1">Mus_musculus_cbaj</li></ul>
+                    <ul><li value="1">Oreochromis_niloticus</li></ul>
+                    <ul><li value="1">Theropithecus_gelada</li></ul>
+                    <ul><li value="1">Microtus_ochrogaster</li></ul>
+                    <ul><li value="1">Takifugu_rubripes</li></ul>
+                    <ul><li value="1">Crocodylus_porosus</li></ul>
+                    <ul><li value="1">Oryctolagus_cuniculus</li></ul>
+                    <ul><li value="1">Bos_mutus</li></ul>
+                    <ul><li value="1">Vulpes_vulpes</li></ul>
+                    <ul><li value="1">Stegastes_partitus</li></ul>
+                    <ul><li value="1">Sorex_araneus</li></ul>
+                    <ul><li value="1">Mus_musculus_akrj</li></ul>
+                    <ul><li value="1">Seriola_dumerili</li></ul>
+                    <ul><li value="1">Gallus_gallus</li></ul>
+                    <ul><li value="1">Mus_musculus_nodshiltj</li></ul>
+                    <ul><li value="1">Chrysemys_picta_bellii</li></ul>
+                    <ul><li value="1">Papio_anubis</li></ul>
+                    <ul><li value="1">Marmota_marmota_marmota</li></ul>
+                    <ul><li value="1">Pongo_abelii</li></ul>
+                    <ul><li value="1">Scleropages_formosus</li></ul>
+                    <ul><li value="1">Ictidomys_tridecemlineatus</li></ul>
+                    <ul><li value="1">Ciona_savignyi</li></ul>
+                    <ul><li value="1">Rhinopithecus_roxellana</li></ul>
+                    <ul><li value="1">Esox_lucius</li></ul>
+                    <ul><li value="1">Meleagris_gallopavo</li></ul>
+                    <ul><li value="1">Mus_musculus_lpj</li></ul>
+                    <ul><li value="1">Fukomys_damarensis</li></ul>
+                    <ul><li value="1">Panthera_tigris_altaica</li></ul>
+                    <ul><li value="1">Seriola_lalandi_dorsalis</li></ul>
+                    <ul><li value="1">Mola_mola</li></ul>
+                    <ul><li value="1">Ursus_americanus</li></ul>
+                    <ul><li value="1">Tupaia_belangeri</li></ul>
+                    <ul><li value="1">Monodelphis_domestica</li></ul>
+                    <ul><li value="1">Rattus_norvegicus</li></ul>
+                    <ul><li value="1">Mus_musculus_129s1svimj</li></ul>
+                    <ul><li value="1">Homo_sapiens</li></ul>
+                    <ul><li value="1">Myotis_lucifugus</li></ul></p>
+                    <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/listSpecies" to the server we obtain:
+<!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                    <meta charset="UTF-8">
+                    <title>RESULT</title>
+                    </head>
+                    <body>
+                    <h1>List of species:</h1>
+                    <ul><li value="1">Mus_musculus</li></ul>
+                    <ul><li value="1">Homo_sapiens</li></ul>
+                    <ul><li value="1">Cavia_porcellus</li></ul><
+                    ul><li value="1">Mus_musculus_cbaj</li></ul>
+                    <ul><li value="1">Amphilophus_citrinellus</li></ul>
+                    <ul><li value="1">Anolis_carolinensis</li></ul>
+                    <ul><li value="1">Cebus_capucinus</li></ul>
+                    <ul><li value="1">Labrus_bergylta</li></ul>
+                    <ul><li value="1">Panthera_pardus</li></ul>
+                    <ul><li value="1">Takifugu_rubripes</li></ul>
+                    <ul><li value="1">Rhinopithecus_bieti</li></ul>
+                    <ul><li value="1">Mastacembelus_armatus</li></ul>
+                    <ul><li value="1">Lepidothrix_coronata</li></ul>
+                    <ul><li value="1">Fukomys_damarensis</li></ul>
+                    <ul><li value="1">Monodelphis_domestica</li></ul>
+                    <ul><li value="1">Equus_asinus_asinus</li></ul>
+                    <ul><li value="1">Xiphophorus_maculatus</li></ul>
+                    <ul><li value="1">Apteryx_owenii</li></ul>
+                    <ul><li value="1">Calidris_pugnax</li></ul>
+                    <ul><li value="1">Gasterosteus_aculeatus</li></ul>
+                    <ul><li value="1">Cricetulus_griseus_picr</li></ul>
+                    <ul><li value="1">Mus_spicilegus</li></ul>
+                    <ul><li value="1">Oryzias_melastigma</li></ul>
+                    <ul><li value="1">Nannospalax_galili</li></ul>
+                    <ul><li value="1">Chelonoidis_abingdonii</li></ul>
+                    <ul><li value="1">Acanthochromis_polyacanthus</li></ul>
+                    <ul><li value="1">Scleropages_formosus</li></ul>
+                    <ul><li value="1">Sarcophilus_harrisii</li></ul>
+                    <ul><li value="1">Gallus_gallus</li></ul>
+                    <ul><li value="1">Latimeria_chalumnae</li></ul>
+                    <ul><li value="1">Numida_meleagris</li></ul>
+                    <ul><li value="1">Mus_musculus_aj</li></ul>
+                    <ul><li value="1">Poecilia_latipinna</li></ul>
+                    <ul><li value="1">Phascolarctos_cinereus</li></ul>
+                    <ul><li value="1">Mus_musculus_fvbnj</li></ul>
+                    <ul><li value="1">Cricetulus_griseus_chok1gshd</li></ul>
+                    <ul><li value="1">Mus_musculus_lpj</li></ul>
+                    <ul><li value="1">Heterocephalus_glaber_female</li></ul>
+                    <ul><li value="1">Calidris_pygmaea</li></ul>
+                    <ul><li value="1">Anas_platyrhynchos_platyrhynchos</li></ul>
+                    <ul><li value="1">Saimiri_boliviensis_boliviensis</li></ul>
+                    <ul><li value="1">Lonchura_striata_domestica</li></ul>
+                    <ul><li value="1">Callithrix_jacchus</li></ul>
+                    <ul><li value="1">Ovis_aries</li></ul>
+                    <ul><li value="1">Papio_anubis</li></ul>
+                    <ul><li value="1">Macaca_fascicularis</li></ul>
+                    <ul><li value="1">Notechis_scutatus</li></ul>
+                    <ul><li value="1">Capra_hircus</li></ul>
+                    <ul><li value="1">Fundulus_heteroclitus</li></ul>
+                    <ul><li value="1">Ursus_americanus</li></ul>
+                    <ul><li value="1">Mus_musculus_nzohlltj</li></ul>
+                    <ul><li value="1">Notamacropus_eugenii</li></ul>
+                    <ul><li value="1">Tursiops_truncatus</li></ul>
+                    <ul><li value="1">Gambusia_affinis</li></ul>
+                    ...
+                    <a href="/">Link to main</a>
+We can observe that the endpoint '/listSpecies' works independent of the parameter limit.
+
+When we send "http://localhost:8000/listSpecies?limit=1" to the server we obtain:
+<!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                    <meta charset="UTF-8">
+                    <title>RESULT</title>
+                    </head>
+                    <body>
+                    <h1>List of species:</h1>
+                    <ul><li value="1">Ficedula_albicollis</li></ul></p>
+                    <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/listSpecies?limit=10" to the server we obtain:
+ <!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                    <meta charset="UTF-8">
+                    <title>RESULT</title>
+                    </head>
+                    <body>
+                    <h1>List of species:</h1>
+                    <ul><li value="1">Ficedula_albicollis</li></ul></p>
+                    <p><ul><li value="1">Castor_canadensis</li></ul></p>
+                    <p><ul><li value="1">Ciona_intestinalis</li></ul></p>
+                    <p><ul><li value="1">Pogona_vitticeps</li></ul></p>
+                    <p><ul><li value="1">Manacus_vitellinus</li></ul></p>
+                    <p><ul><li value="1">Mus_spicilegus</li></ul></p>
+                    <p><ul><li value="1">Zonotrichia_albicollis</li></ul></p>
+                    <p><ul><li value="1">Dipodomys_ordii</li></ul></p>
+                    <p><ul><li value="1">Nomascus_leucogenys</li></ul></p>
+                    <p><ul><li value="1">Mus_musculus_fvbnj</li></ul></p>
+                    <a href="/">Link to main</a>
+
+We can observe that te parameter limit works well, and we don't have problems to introduce an input different to a number
+an outside of interval [1,199].
+
+>/karyotype
+When we send "http://localhost:8000/karyotype?specie=mouse" to the server we obtain:
+<!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                    <meta charset="UTF-8">
+                    <title>RESULT</title>
+                    </head>
+                    <body>
+                    <h1>Karyotype of mouse</h1>
+                    <ul><li value="1">1</li></ul>
+                    <ul><li value="1">2</li></ul>
+                    <ul><li value="1">3</li></ul>
+                    <ul><li value="1">4</li></ul>
+                    <ul><li value="1">5</li></ul>
+                    <ul><li value="1">6</li></ul>
+                    <ul><li value="1">7</li></ul>
+                    <ul><li value="1">8</li></ul>
+                    <ul><li value="1">9</li></ul>
+                    <ul><li value="1">10</li></ul>
+                    <ul><li value="1">11</li></ul>
+                    <ul><li value="1">12</li></ul>
+                    <ul><li value="1">13</li></ul>
+                    <ul><li value="1">14</li></ul>
+                    <ul><li value="1">15</li></ul>
+                    <ul><li value="1">16</li></ul>
+                    <ul><li value="1">17</li></ul>
+                    <ul><li value="1">18</li></ul>
+                    <ul><li value="1">19</li></ul>
+                    <ul><li value="1">X</li></ul>
+                    <ul><li value="1">Y</li></ul>
+                    <ul><li value="1">Mt</li></ul></p>
+                    <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/karyotype?specie=Ficedula_albicollis" to the server we obtain:
+<!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                    <meta charset="UTF-8">
+                    <title>RESULT</title>
+                    </head>
+                    <body>
+                    <h1>Karyotype of Ficedula_albicollis</h1>
+                    No available karyotype.</p>
+                    <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/karyotype?specie=asd" to the server we obtain:
+<!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                    <meta charset="UTF-8">
+                    <title>RESULT</title>
+                    </head>
+                    <body>
+                    <h1>Karyotype of asd</h1>
+                    requests.exceptions.HTTPError: 400
+        Client Error: Bad Request for url: http://rest.ensembl.org/info/assembly/asd</p>
+                    <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/karyotype?specie=Capra_hircus" to the server we obtain:
+<!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                    <meta charset="UTF-8">
+                    <title>RESULT</title>
+                    </head>
+                    <body>
+                    <h1>Karyotype of Capra_hircus</h1>
+                    <ul><li value="1">1</li></ul>
+                    <ul><li value="1">2</li></ul>
+                    <ul><li value="1">3</li></ul>
+                    <ul><li value="1">4</li></ul>
+                    <ul><li value="1">5</li></ul>
+                    <ul><li value="1">6</li></ul>
+                    <ul><li value="1">7</li></ul>
+                    <ul><li value="1">8</li></ul>
+                    <ul><li value="1">9</li></ul>
+                    <ul><li value="1">10</li></ul>
+                    <ul><li value="1">11</li></ul>
+                    <ul><li value="1">12</li></ul>
+                    <ul><li value="1">13</li></ul>
+                    <ul><li value="1">14</li></ul>
+                    <ul><li value="1">15</li></ul>
+                    <ul><li value="1">16</li></ul>
+                    <ul><li value="1">17</li></ul>
+                    <ul><li value="1">18</li></ul>
+                    <ul><li value="1">19</li></ul>
+                    <ul><li value="1">20</li></ul>
+                    <ul><li value="1">21</li></ul>
+                    <ul><li value="1">22</li></ul>
+                    <ul><li value="1">23</li></ul>
+                    <ul><li value="1">24</li></ul>
+                    <ul><li value="1">25</li></ul>
+                    <ul><li value="1">26</li></ul>
+                    <ul><li value="1">27</li></ul>
+                    <ul><li value="1">28</li></ul>
+                    <ul><li value="1">29</li></ul>
+                    <ul><li value="1">Mt</li></ul></p>
+                    <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/karyotype?specie=" to the server we obtain:
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Erorr page</title>
+  </head>
+  <body style="background-color: tomato;">
+    <h1> ERROR </h1>
+    <p>Sorry but you have to introduce a variable and send it.</p>
+  <a href="/">Link to main</a>
+  </body>
+</html>
+
+>/chromosomeLength
+When we send "http://localhost:8000/chromosomeLength?specie=homo_sapiens&chromo=1" to the server we obtain:
+<!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                    <meta charset="UTF-8">
+                    <title>RESULT</title>
+                    </head>
+                    <body>
+                    <h1>Lenght of 1 chromosome of the specie homo_sapiens. </h1>
+                    The sequence of the specie is: 248956422</p>
+                    <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/chromosomeLength?specie=mouse&chromo=18" to the server we obtain:
+<!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                    <meta charset="UTF-8">
+                    <title>RESULT</title>
+                    </head>
+                    <body>
+                    <h1>Lenght of 18 chromosome of the specie mouse. </h1>
+                    The sequence of the specie is: 90702639</p>
+                    <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/chromosomeLength?specie=Pogona_vitticeps&chromo=1" to the server we obtain:
+<!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                    <meta charset="UTF-8">
+                    <title>RESULT</title>
+                    </head>
+                    <body>
+                    <h1>Lenght of 1 chromosome of the specie Pogona_vitticeps. </h1>
+                    The sequence of the specie is: requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://rest.ensembl.org/info/assembly/Pogona_vitticeps/1</p>
+                    <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/chromosomeLength?specie=homo_sapiens&chromo=" to the server we obtain:
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Erorr page</title>
+  </head>
+  <body style="background-color: tomato;">
+    <h1> ERROR </h1>
+    <p>Sorry but you have to introduce a variable and send it.</p>
+  <a href="/">Link to main</a>
+  </body>
+</html>
+
+When we send "http://localhost:8000/chromosomeLength?specie=homo_sapiens&chromo=2" to the server we obtain:
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Erorr page</title>
+  </head>
+  <body style="background-color: tomato;">
+    <h1> ERROR </h1>
+    <p>Sorry but you have to introduce a variable and send it.</p>
+  <a href="/">Link to main</a>
+  </body>
+</html>
+
+>/
+When we send "http://localhost:8000/" to the server we obtain:
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Information</title>
+  </head>
+    <body style="background-color: 	coral;">
+    <h2>Information of e!Ensambl</h2>
+    <h4>List of species</h4>
+      <form action="/listSpecies" method="get">
+        Limit number of species (optional): <input type="number" name="limit" min="1" max="199">
+        <br><br>
+          <input type="submit"/>
+        </form>
+    <h4>Karyotype of the specie</h4>
+      <form action="/karyotype" method="get">
+        Introduce the name of the specie:  <input type="text" name="specie">
+        <br><br>
+          <input type="submit"/>
+        </form>
+    <h4>The length of the specie</h4>
+     <form action="/chromosomeLength" method="get">
+       <p>Introduce the name of the specie:  <input type="text" name="specie"> </p>
+        Introduce a chromosome:<input type="text" name="chromo">
+      <br><br>
+        <input type="submit"/>
+      </form>
+    <h4>Sequence for human gene</h4>
+     <form action="/geneSeq" method="get">
+       Introduce the name of a gene: <input type="text" name="specie">
+       <br><br>
+        <input type="submit">
+       </form>
+    <h4>Information of a gene</h4>
+     <form action="/geneInfo" method="get">
+       Introduce the name of a gene: <input type="text" name="specie">
+       <br><br>
+        <input type="submit">
+       </form>
+    <h4>Calculations of a gene</h4>
+    <form action="/geneCalc" method="get">
+      Introduce the name of a gene: <input type="text" name="specie">
+       <br><br>
+        <input type="submit">
+       </form>
+    <h4>Names of genes in location of a gene</h4>
+    <form action="/geneList" method="get">
+      <p>Introduce the name of a chromosome: <input type="text" name="chromo"></p>
+      <p>Introduce the start point: <input type="number" name="start" min="0"></p>
+      Introduce the end point: <input type="number" name="end" min="0">
+        <br><br>
+         <input type="submit">
+        </form>
+  </body>
+</html>
+
+
+-Medium level
+>/geneSeq
+When we send "http://localhost:8000/geneSeq?specie=FRAT1" to the server we obtain:
+<!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                    <meta charset="UTF-8">
+                    <title>RESULT</title>
+                    </head>
+                    <body>
+                    <h1>The sequence of the gene FRAT1. </h1>
+                    The sequence is: ENSG00000165879</p>
+                    <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/geneSeq?specie=CCD" to the server we obtain:
+<!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                    <meta charset="UTF-8">
+                    <title>RESULT</title>
+                    </head>
+                    <body>
+                    <h1>The sequence of the gene CCD. </h1>
+                    The sequence is: ENSG00000124813</p>
+                    <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/geneSeq?specie=ZFY" to the server we obtain:
+<!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                    <meta charset="UTF-8">
+                    <title>RESULT</title>
+                    </head>
+                    <body>
+                    <h1>The sequence of the gene ZFY. </h1>
+                    The sequence is: ENSG00000067646</p>
+                    <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/geneSeq?specie=ASDFGSY" to the server we obtain:
+<!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                    <meta charset="UTF-8">
+                    <title>RESULT</title>
+                    </head>
+                    <body>
+                    <h1>The sequence of the gene ASDFGSY. </h1>
+                    The sequence is: requests.exceptions.HTTPError: 400
+                    Client Error: Bad Request for url: http://rest.ensembl.org/xrefs/symbol/homo_sapiens/ASDFGSY</p>
+                    <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/geneSeq?specie=" to the server we obtain:
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Erorr page</title>
+  </head>
+  <body style="background-color: tomato;">
+    <h1> ERROR </h1>
+    <p>Sorry but you have to introduce a variable and send it.</p>
+  <a href="/">Link to main</a>
+  </body>
+</html>
+
+>/geneInfo
+When we send "http://localhost:8000/geneInfo?specie=FRAT1" to the server we obtain:
+<!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                        <meta charset="UTF-8">
+                        <title>RESULT</title>
+                        </head>
+                        <body>
+                        <h1>The information of the gene FRAT1. </h1>
+                        The lenght of the sequence is: 2649</p>
+                        The chromosome of the gene is: 10</p>
+                        The id of the gene is: ENSG00000165879</p>
+                        Start position: 97319267</p>
+                        End position: 97321915</p>
+                        <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/geneInfo?specie=GAS5 to the server we obtain:
+<!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                        <meta charset="UTF-8">
+                        <title>RESULT</title>
+                        </head>
+                        <body>
+                        <h1>The information of the gene GAS5. </h1>
+                        The lenght of the sequence is: 10324</p>
+                        The chromosome of the gene is: 1</p>
+                        The id of the gene is: ENSG00000234741</p>
+                        Start position: 173858559</p>
+                        End position: 173868882</p>
+                        <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/geneInfo?specie=NUPR1" to the server we obtain:
+<!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                        <meta charset="UTF-8">
+                        <title>RESULT</title>
+                        </head>
+                        <body>
+                        <h1>The information of the gene NUPR1. </h1>
+                        The lenght of the sequence is: 6467</p>
+                        The chromosome of the gene is: 16</p>
+                        The id of the gene is: ENSG00000176046</p>
+                        Start position: 28532708</p>
+                        End position: 28539174</p>
+                        <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/geneInfo?specie=aesfvvyu5" to the server we obtain:
+<!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                        <meta charset="UTF-8">
+                        <title>RESULT</title>
+                        </head>
+                        <body>
+                        <h1>The information of the gene aesfvvyu5. </h1>
+                        The lenght of the sequence is: requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://rest.ensembl.org/sequence/id/aesfvvyu5</p>
+                        The chromosome of the gene is: requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://rest.ensembl.org/sequence/id/aesfvvyu5</p>
+                        The id of the gene is: requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://rest.ensembl.org/sequence/id/aesfvvyu5</p>
+                        Start position: requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://rest.ensembl.org/sequence/id/aesfvvyu5</p>
+                        End position: requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://rest.ensembl.org/sequence/id/aesfvvyu5</p>
+                        <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/geneInfo?specie=" to the server we obtain:
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Erorr page</title>
+  </head>
+  <body style="background-color: tomato;">
+    <h1> ERROR </h1>
+    <p>Sorry but you have to introduce a variable and send it.</p>
+  <a href="/">Link to main</a>
+  </body>
+</html>
+
+>/geneCalc
+When we send "http://localhost:8000/geneCalc?specie=FRAT1" to the server we obtain:
+<!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                        <meta charset="UTF-8">
+                        <title>RESULT</title>
+                        </head>
+                        <body>
+                        <h1>The information of the gene FRAT1. </h1>
+                        The lenght of the sequence is: 2649 </p>
+                        The A percentage is : 18.0%</p>
+                        The C percentage is: 30.2%</p>
+                        The T percentage is: 19.7%</p>
+                        The G percentage is: 32.0%</p>
+                        <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/geneCalc?specie=C16orf71" to the server we obtain:
+<!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                        <meta charset="UTF-8">
+                        <title>RESULT</title>
+                        </head>
+                        <body>
+                        <h1>The information of the gene C16orf71. </h1>
+                        The lenght of the sequence is: 15053 </p>
+                        The A percentage is : 24.6%</p>
+                        The C percentage is: 26.6%</p>
+                        The T percentage is: 22.8%</p>
+                        The G percentage is: 26.1%</p>
+                        <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/geneCalc?specie=KIZ" to the server we obtain:
+<!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                        <meta charset="UTF-8">
+                        <title>RESULT</title>
+                        </head>
+                        <body>
+                        <h1>The information of the gene KIZ. </h1>
+                        The lenght of the sequence is: 120640 </p>
+                        The A percentage is : 27.7%</p>
+                        The C percentage is: 20.4%</p>
+                        The T percentage is: 31.1%</p>
+                        The G percentage is: 20.8%</p>
+                        <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/geneCalc?specie=aaaaaaa" to the server we obtain:
+<!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                        <meta charset="UTF-8">
+                        <title>RESULT</title>
+                        </head>
+                        <body>
+                        <h1>The information of the gene aaaaaaa. </h1>
+                        The lenght of the sequence is: requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://rest.ensembl.org/sequence/id/aaaaaaa </p>
+                        The A percentage is : requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://rest.ensembl.org/sequence/id/aaaaaaa</p>
+                        The C percentage is: requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://rest.ensembl.org/sequence/id/aaaaaaa</p>
+                        The T percentage is: requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://rest.ensembl.org/sequence/id/aaaaaaa</p>
+                        The G percentage is: requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://rest.ensembl.org/sequence/id/aaaaaaa</p>
+                        <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/geneCalc?specie=" to the server we obtain:
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Erorr page</title>
+  </head>
+  <body style="background-color: tomato;">
+    <h1> ERROR </h1>
+    <p>Sorry but you have to introduce a variable and send it.</p>
+  <a href="/">Link to main</a>
+  </body>
+</html>
+
+>/geneList
+When we send "http://localhost:8000/geneList?chromo=1&start=0&end=30000" to the server we obtain:
+<!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                    <meta charset="UTF-8">
+                    <title>RESULT</title>
+                    </head>
+                    <body>
+                    <h1>List of names of in location of gene:</h1>
+                    <ul><li value="1">DDX11L1</li></ul>
+<ul><li value="1">WASH7P</li></ul>
+<ul><li value="1">MIR6859-1</li></ul>
+<ul><li value="1">MIR1302-2HG</li></ul>
+</p>
+                    <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/geneList?chromo=12&start=1133&end=600000" to the server we obtain:
+<!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                    <meta charset="UTF-8">
+                    <title>RESULT</title>
+                    </head>
+                    <body>
+                    <h1>List of names of in location of gene:</h1>
+                    <ul><li value="1">DDX11L8</li></ul>
+<ul><li value="1">WASH8P</li></ul>
+<ul><li value="1">FAM138D</li></ul>
+<ul><li value="1">IQSEC3</li></ul>
+<ul><li value="1">AC026369.3</li></ul>
+<ul><li value="1">AC026369.1</li></ul>
+<ul><li value="1">AC026369.2</li></ul>
+<ul><li value="1">AC007406.3</li></ul>
+<ul><li value="1">SLC6A12</li></ul>
+<ul><li value="1">AC007406.1</li></ul>
+<ul><li value="1">AC007406.4</li></ul>
+<ul><li value="1">SLC6A13</li></ul>
+<ul><li value="1">AC007406.2</li></ul>
+<ul><li value="1">AC007406.5</li></ul>
+<ul><li value="1">KDM5A</li></ul>
+<ul><li value="1">CCDC77</li></ul>
+<ul><li value="1">B4GALNT3</li></ul>
+<ul><li value="1">NINJ2</li></ul>
+<ul><li value="1">AC006205.2</li></ul>
+<ul><li value="1">RNU7-103P</li></ul>
+<ul><li value="1">AC006205.1</li></ul>
+</p>
+                    <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/geneList?chromo=2&start=13&end=2111" to the server we obtain:
+<!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                    <meta charset="UTF-8">
+                    <title>RESULT</title>
+                    </head>
+                    <body>
+                    <h1>List of names of in location of gene:</h1>
+                    </p>
+                    <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/geneList?chromo=123&start=112&end=123" to the server we obtain:
+<!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                    <meta charset="UTF-8">
+                    <title>RESULT</title>
+                    </head>
+                    <body>
+                    <h1>List of names of in location of gene:</h1>
+                    requests.exceptions.HTTPError:400 Client Error: Bad Request for url: http://rest.ensembl.org/overlap/region/human/123:112-123?feature=gene</p>
+                    <a href="/">Link to main</a>
+
+When we send "http://localhost:8000/geneList?chromo=&start=&end=" to the server we obtain:
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Erorr page</title>
+  </head>
+  <body style="background-color: tomato;">
+    <h1> ERROR </h1>
+    <p>Sorry but you have to introduce a variable and send it.</p>
+  <a href="/">Link to main</a>
+  </body>
+</html>
+
+When we send "http://localhost:8000/geneList?chromo=X&start=1&end=" to the server we obtain:
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Erorr page</title>
+  </head>
+  <body style="background-color: tomato;">
+    <h1> ERROR </h1>
+    <p>Sorry but you have to introduce a variable and send it.</p>
+  <a href="/">Link to main</a>
+  </body>
+</html>
+
+-Error (when we introduce a endpoint that does not exist)
+When we send "http://localhost:8000/listasd" to the server we obtain:
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Erorr page</title>
+  </head>
+  <body style="background-color: red;">
+    <h1> ERROR </h1>
+    <p>Sorry but you have commit an error.</p>
+  <a href="/">Link to main</a>
+  </body>
+</html>
+
+When we send "http://localhost:8000/lgeb2143345s" to the server we obtain:
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Erorr page</title>
+  </head>
+  <body style="background-color: red;">
+    <h1> ERROR </h1>
+    <p>Sorry but you have commit an error.</p>
+  <a href="/">Link to main</a>
+  </body>
+</html>
